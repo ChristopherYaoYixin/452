@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Geographic Location Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://webapi.amap.com/maps?v=1.4.15&key=oSuFfdJs0XwhQszwDOlfTeHHfnwEfLEd&callback=initMap"></script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .header {
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center;
+        }
+        .topnav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .topnav a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            position: relative;
+            height: calc(100% - 100px); /* Adjust the height to account for header and footer */
+        }
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <img src="1.png" alt="logo" class="left-image">
+    
+<h1>Welcome to my Geographic Location Page</h1>
+<h2>AusTech Computers Pty Ltd</h2>
+</div>
+
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="support.html">Customer Support</a>
+    <a href="products.html">Product Portfolio</a>
+    <a href="blog.html">Blog Page</a>
+    <a href="about.html">About Us</a>
+    <a href="location.html">Geographic Location</a>
+</div>
+
+<div class="container">
+    <!-- Map container -->
+    <div id="map"></div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <p>Copyright &copy; Christopher</p>
+    </div>
+</footer>
+
+<script>
+    // Initialize the map
+    function initMap() {
+        console.log('Initializing map...');
+        try {
+            var map = new AMap.Map('map', {
+                zoom: 10, // Set the zoom level of the map
+                center: [151.2093, -33.8688], // Set the center coordinates of the map, here for Sydney
+                viewMode: '3D' // Use 3D view mode
+            });
+
+            // Add a marker
+            var marker = new AMap.Marker({
+                position: new AMap.LngLat(151.2093, -33.8688), // Set the position of the marker
+                title: 'Sydney'
+            });
+
+            // Add the marker to the map
+            marker.setMap(map);
+
+            // Add a click event listener to the marker
+            AMap.event.addListener(marker, 'click', function() {
+                var infoWindow = new AMap.InfoWindow({
+                    content: '<div><strong>Sydney</strong><br>Australia</div>', // Set the content of the info window
+                    offset: new AMap.Pixel(0, -30)
+                });
+                infoWindow.open(map, marker.getPosition());
+            });
+        } catch (error) {
+            console.error('Error initializing map:', error);
+        }
+    }
+</script>
+
+</body>
+</html>
