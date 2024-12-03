@@ -295,13 +295,13 @@ footer a:hover {
   height: 600px;
   width: 100%;
 }
-/* 默认样式 */
+/* Default */
 body {
   background-color: #f5f5f5;
   color: #333;
 }
 
-/* 高对比度模式样式 */
+/* High contrast mode style */
 body.high-contrast {
   background-color: #000;
   color: #fff;
