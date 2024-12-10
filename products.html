@@ -1,0 +1,171 @@
+<!DOCTYPE html>    
+<html lang="en">    
+<head>    
+<meta charset="UTF-8">    
+<title>Product Portfolio</title>    
+<link rel="stylesheet" href="styles.css">
+</head>    
+<body>    
+    
+  <div class="header">
+    <img src="1.png" alt="logo" class="left-image">  
+    <h1>Welcome to my Product  page </h1>   
+    <h2>AusTech Computers Pty Ltd</h2>
+  </div>   
+  <button id="high-contrast-toggle" onclick="toggleHighContrast()">High Contrast Mode</button>
+  <div class="topnav">  
+    <a href="index.html">Home</a>  
+    <a href="support.html">Customer support</a>  
+    <a href="products.html">Product portfolio</a>
+    <a href="blog.html">Blog page</a> 
+    <a href="about.html">About Us</a>
+    
+  </div> 
+    
+<div class="products">    
+  <!-- First product -->  
+  <div class="product-item">  
+    <img src="D.png" alt="Product 1" class="product-image">  
+    <button class="product-name" onclick="showModal('productModal1')">ThinkPad X1 Carbon AI 2024</button>  
+  </div>  
+  <div class="product-item">  
+    <img src="E.png" alt="Product 2" class="product-image">  
+    <button class="product-name" onclick="showModal('productModal2')">ThinkPad X1 Carbon AI 2024</button>  
+  </div>  
+  <div class="product-item">  
+    <img src="F.png" alt="Product 3" class="product-image">  
+    <button class="product-name" onclick="showModal('productModal3')">ThinkPad P14s 2024</button>  
+  </div>  
+  <div class="product-item">  
+    <img src="G.png" alt="Product 4" class="product-image">  
+    <button class="product-name" onclick="showModal('productModal4')">ThinkPad E14 2023</button>  
+  </div>  
+  <div class="product-item">  
+    <img src="H.png" alt="Product 5" class="product-image">  
+    <button class="product-name" onclick="showModal('productModal5')">Y7000P 2024</button>  
+  </div>  
+  <div class="product-item">  
+    <img src="I.png" alt="Product 6" class="product-image">  
+    <button class="product-name" onclick="showModal('productModal6')">Y9000P</button>  
+  </div>  
+  <div class="product-item">  
+    <img src="J.png" alt="Product 7" class="product-image">  
+    <button class="product-name" onclick="showModal('productModal7')">XIAOXIN Pro AI</button>  
+  </div> 
+  <div class="product-item">  
+    <img src="K.png" alt="Product 8" class="product-image">  
+    <button class="product-name" onclick="showModal('productModal8')">ThinkBook 16+ 2024 AI</button>  
+  </div> 
+  <div class="product-item">  
+    <img src="L.png" alt="Product 9" class="product-image">  
+    <button class="product-name" onclick="showModal('productModal9')">ThinkBook 14</button>  
+  </div> 
+  <div class="product-item">  
+    <img src="M.png" alt="Product 10" class="product-image">  
+    <button class="product-name" onclick="showModal('productModal10')">ThinkBook 14+</button>  
+  </div> 
+  <!-- More products can be added like this -->  
+</div>  
+  
+<!-- Modal box for the first product -->  
+<div id="productModal1" class="product-modal">  
+  <div class="product-modal-content">  
+    <span class="close" onclick="closeModal('productModal1')">&times;</span>
+    <img src="D.png" alt="Product 1" class="product-image">  
+    <h2>ThinkPad X1 Carbon AI 2024</h2>                                   
+    <p>The ThinkPad X1 Carbon AI 2024 is renowned for its ultra-slim design, equipped with a high-efficiency processor, making it easy to handle both work and entertainment without any burden of carrying.</p>  
+    <!-- Add more detailed information about the product here -->  
+  </div>  
+</div> 
+<div id="productModal2" class="product-modal">  
+    <div class="product-modal-content">  
+      <span class="close" onclick="closeModal('productModal2')">&times;</span>
+      <img src="E.png" alt="Product 2" class="product-image">  
+      <h2>ThinkPad P16+</h2>
+      </h2>                                     
+      <p>Specifically designed for gaming enthusiasts, it comes with a high-performance graphics card and a fast processor, smoothly running all kinds of large games and delivering an impressive audiovisual feast.</p>  
+      <!-- Add more detailed information about the product here -->  
+    </div>  
+  </div> 
+  <div id="productModal3" class="product-modal">  
+    <div class="product-modal-content">  
+      <span class="close" onclick="closeModal('productModal3')">&times;</span>
+      <img src="F.png" alt="Product 3" class="product-image">  
+      <h2>ThinkPad P14s 2024</h2>                                      
+      <p>Tailored for designers and creators, it boasts a high-resolution display and a powerful processor, empowering endless creativity and producing professional-grade works.</p>  
+      <!-- Add more detailed information about the product here -->  
+    </div>  
+  </div>
+  <div id="productModal4" class="product-modal">  
+    <div class="product-modal-content">  
+      <span class="close" onclick="closeModal('productModal4')">&times;</span>
+      <img src="G.png" alt="Product 4" class="product-image">  
+      <h2>ThinkPad E14 2023</h2>                                      
+      <p>The ThinkPad E14 2023 is a business laptop known for its excellent durability and performance. It uses high-quality materials and exquisite craftsmanship to ensure the stability and durability of the product. Meanwhile, its efficient cooling system and long battery life make it the preferred choice for business people.</p>  
+      <!-- Add more detailed information about the product here -->  
+    </div>  
+  </div>
+  <div id="productModal5" class="product-modal">  
+    <div class="product-modal-content">  
+      <span class="close" onclick="closeModal('productModal5')">&times;</span>
+      <img src="H.png" alt="Product 5" class="product-image">  
+      <h2>Y7000P 2024</h2>                                      
+      <p>This laptop features a long-lasting battery and a comfortable keyboard, providing persistent endurance and a comfortable experience for both classroom learning and daily office work.</p>  
+      <!-- Add more detailed information about the product here -->  
+    </div>  
+  </div>
+  <div id="productModal6" class="product-modal">  
+    <div class="product-modal-content">  
+      <span class="close" onclick="closeModal('productModal6')">&times;</span>
+      <img src="I.png" alt="Product 6" class="product-image">  
+      <h2>Y9000P</h2>                                      
+      <p>Made with premium materials and exquisite craftsmanship, combined with secure encryption features and a high-efficiency processor, it meets the dual demands of quality and security for business professionals.</p>  
+      <!-- Add more detailed information about the product here -->  
+    </div>  
+  </div>
+  <div id="productModal7" class="product-modal">  
+    <div class="product-modal-content">  
+      <span class="close" onclick="closeModal('productModal7')">&times;</span>
+      <img src="J.png" alt="Product 7" class="product-image">  
+      <h2>XIAOXIN Pro AI</h2> 
+      <p>Lightweight and portable, with comprehensive interfaces and multi-functional expandability, it's perfect for creators who are often on the move, inspiring creativity anytime, anywhere.</p>  
+      <!-- Add more detailed information about the product here -->  
+    </div>  
+  </div>
+  <div id="productModal8" class="product-modal">  
+    <div class="product-modal-content">  
+      <span class="close" onclick="closeModal('productModal8')">&times;</span>
+      <img src="K.png" alt="Product 8" class="product-image">  
+      <h2>ThinkBook 16+ 2024 AI</h2>                                      
+      <p>Equipped with the latest generation of processors and high-speed solid-state drives, it boots quickly and runs smoothly, eliminating the need for any waiting in both work and entertainment.</p>  
+      <!-- Add more detailed information about the product here -->  
+    </div>  
+  </div>
+  <div id="productModal9" class="product-modal">  
+    <div class="product-modal-content">  
+      <span class="close" onclick="closeModal('productModal9')">&times;</span>
+      <img src="L.png" alt="Product 9" class="product-image">  
+      <h2>ThinkBook 14</h2>                                      
+      <p>Featuring a vibrant color and high-definition resolution display, it makes every movie-watching and browsing session a visual treat, bringing colorful life right to your eyes.</p>  
+      <!-- Add more detailed information about the product here -->  
+    </div>  
+  </div>
+  <div id="productModal10" class="product-modal">  
+    <div class="product-modal-content">  
+      <span class="close" onclick="closeModal('productModal10')">&times;</span>
+      <img src="M.png" alt="Product 10" class="product-image">  
+      <h2>ThinkBook 14+</h2>                                      
+      <p>With a unique design and a variety of trendy color options, it's not just a high-performance laptop but also a fashionable item that showcases individuality.</p>  
+      <!-- Add more detailed information about the product here -->  
+    </div>  
+  </div>
+  
+
+
+<footer>  
+  <div class="footer-content">  
+  <p>Copyright &copy; Christopher</p>    
+</footer>  
+<script src="1.js"></script> 
+</body>  
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>    
+<html lang="en">    
+<head>    
+<meta charset="UTF-8">    
+<title>Customer support page</title>    
+<link rel="stylesheet" href="styles.css">
+</head>      
+<body>    
+  <button id="high-contrast-toggle" onclick="toggleHighContrast()">High Contrast Mode</button>
+  <div class="header">
+    <img src="1.png" alt="logo" class="left-image">  
+    <h1>Welcome to my Customer support page </h1>  
+    <h2>AusTech Computers Pty Ltd</h2>
+    <p>Here are some of my  website information.</p>  
+  </div>   
+  
+  <div class="topnav">  
+    <a href="index.html">Home</a>  
+    <a href="support.html">Customer support</a>  
+    <a href="products.html">Product portfolio</a>
+    <a href="blog.html">Blog page</a> 
+    <a href="about.html">About Us</a>
+    
+  </div> 
+  
+<!-- Add images and descriptions below topnav -->  
+<div class="photo-with-description">  
+  <div class="left-photo">  
+    <img src="C.png" alt="Customer Support Image">  
+  </div>  
+  <div class="description">  
+    <h2 class="support-flowchart-title">1. Support flowchart</h2>  
+    <p>We are committed to providing customers with the highest quality and most timely service.</p>  
+    <p>Here is our support flowchart to help you better understand our service process:</p>  
+    <img src="B.png" alt="Support Flowchart Image" class="service-flowchart-image">  
+    <!-- You can add more explanations or pictures about the service process here -->  
+  </div>  
+  <div class="contact-info">  
+    <h3>Aoxun Technology Computer Co., Ltd's information</h3>  
+    <p>We welcome you to contact us at any time through the following methods, and our customer service team will reply to you as soon as possible:</p>  
+    <p>Phone: +61 8888 8888</p>  
+    <p>Email: <a href="mailto:info@qq.com">1918747738@qq.com</a></p>  
+    <!-- Add online form here -->  
+    <div class="contact-form">  
+      <h3>3. Contact Form</h3>  
+      <form action="insert.php" method="post" onsubmit="handleSubmit(event)">  
+          <div>  
+              <label for="name">Name:</label>  
+              <input type="text" id="name" name="name" required>  
+          </div>  
+          <div>  
+              <label for="email">Email:</label>  
+              <input type="email" id="email" name="email" required>  
+          </div>  
+          <div>  
+              <label for="message">Message:</label>  
+              <textarea id="message" name="message" rows="4" required></textarea>  
+          </div>  
+          <div>  
+              <input type="submit" value="Submit"> 
+               
+          </div>  
+      </form>  
+    </div>  
+  </div>  
+</div>  
+  
+<footer>  
+  <div class="footer-content">  
+  <p>Copyright &copy; Christopher</p>    
+</footer>    
+<script src="1.js"></script> 
+</body>    
+</html>
